@@ -1,0 +1,311 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32
+LIBS:ws2812
+LIBS:beach-ws2812-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32F103C(8-B)Tx U?
+U 1 1 5AE8846A
+P 6200 2700
+F 0 "U?" H 6200 2800 50  0000 C CNN
+F 1 "STM32F103C(8-B)Tx" H 6200 2600 50  0000 C CNN
+F 2 "LQFP48" H 6200 2500 50  0000 C CIN
+F 3 "" H 6200 2700 50  0000 C CNN
+	1    6200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5AE8B4EF
+P 3300 5300
+F 0 "C?" H 3310 5370 50  0000 L CNN
+F 1 "100nF" H 3310 5220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3300 5300 50  0001 C CNN
+F 3 "" H 3300 5300 50  0000 C CNN
+	1    3300 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5AE8B61A
+P 3550 5300
+F 0 "C?" H 3560 5370 50  0000 L CNN
+F 1 "100nF" H 3560 5220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3550 5300 50  0001 C CNN
+F 3 "" H 3550 5300 50  0000 C CNN
+	1    3550 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5AE8B661
+P 3800 5300
+F 0 "C?" H 3810 5370 50  0000 L CNN
+F 1 "100nF" H 3810 5220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3800 5300 50  0001 C CNN
+F 3 "" H 3800 5300 50  0000 C CNN
+	1    3800 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5AE8B78C
+P 9600 4800
+F 0 "#PWR01" H 9600 4550 50  0001 C CNN
+F 1 "GND" H 9600 4650 50  0000 C CNN
+F 2 "" H 9600 4800 50  0000 C CNN
+F 3 "" H 9600 4800 50  0000 C CNN
+	1    9600 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 5AE8B82C
+P 2600 4400
+F 0 "#PWR02" H 2600 4250 50  0001 C CNN
+F 1 "+3.3V" H 2600 4540 50  0000 C CNN
+F 2 "" H 2600 4400 50  0000 C CNN
+F 3 "" H 2600 4400 50  0000 C CNN
+	1    2600 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4400 2800 4400
+Connection ~ 2800 4500
+Connection ~ 2800 4600
+Wire Wire Line
+	9600 4400 9600 4800
+Connection ~ 9600 4500
+Connection ~ 9600 4600
+Connection ~ 9600 4700
+Wire Wire Line
+	2800 4200 2800 4700
+$Comp
+L +3.3V #PWR03
+U 1 1 5AE8BA23
+P 3300 5100
+F 0 "#PWR03" H 3300 4950 50  0001 C CNN
+F 1 "+3.3V" H 3300 5240 50  0000 C CNN
+F 2 "" H 3300 5100 50  0000 C CNN
+F 3 "" H 3300 5100 50  0000 C CNN
+	1    3300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5AE8BA44
+P 3300 5500
+F 0 "#PWR04" H 3300 5250 50  0001 C CNN
+F 1 "GND" H 3300 5350 50  0000 C CNN
+F 2 "" H 3300 5500 50  0000 C CNN
+F 3 "" H 3300 5500 50  0000 C CNN
+	1    3300 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 5500 3300 5400
+Wire Wire Line
+	2550 5500 4050 5500
+Wire Wire Line
+	3550 5500 3550 5400
+Wire Wire Line
+	3800 5500 3800 5400
+Connection ~ 3550 5500
+Wire Wire Line
+	3300 5100 3300 5200
+Wire Wire Line
+	2550 5100 4050 5100
+Wire Wire Line
+	3550 5100 3550 5200
+Wire Wire Line
+	3800 5100 3800 5200
+Connection ~ 3550 5100
+$Comp
+L C_Small C?
+U 1 1 5AE8BC82
+P 4050 5300
+F 0 "C?" H 4060 5370 50  0000 L CNN
+F 1 "4.7µF" H 4060 5220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4050 5300 50  0001 C CNN
+F 3 "" H 4050 5300 50  0000 C CNN
+F 4 "Connect near VDD_3" H 4050 5300 60  0001 C CNN "Comment"
+	1    4050 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5100 4050 5200
+Connection ~ 3800 5100
+Wire Wire Line
+	4050 5500 4050 5400
+Connection ~ 3800 5500
+$Comp
+L C_Small C?
+U 1 1 5AE8BD38
+P 2800 5300
+F 0 "C?" H 2810 5370 50  0000 L CNN
+F 1 "1µF" H 2810 5220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2800 5300 50  0001 C CNN
+F 3 "" H 2800 5300 50  0000 C CNN
+F 4 "Connect to VDD_A" H 2800 5300 60  0001 C CNN "Comment"
+	1    2800 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5AE8BD71
+P 2550 5300
+F 0 "C?" H 2560 5370 50  0000 L CNN
+F 1 "10nF" H 2560 5220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2550 5300 50  0001 C CNN
+F 3 "" H 2550 5300 50  0000 C CNN
+F 4 "Connect to VDD_A" H 2550 5300 60  0001 C CNN "Comment"
+	1    2550 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5400 2550 5500
+Connection ~ 3300 5500
+Wire Wire Line
+	3300 5500 2800 5500
+Wire Wire Line
+	2800 5500 2800 5400
+Wire Wire Line
+	2800 5100 2800 5200
+Connection ~ 3300 5100
+Wire Wire Line
+	2550 5100 2550 5200
+Connection ~ 2800 5100
+Connection ~ 2800 5500
+Connection ~ 2800 4400
+$Comp
+L GND #PWR05
+U 1 1 5AE8C2AD
+P 5400 5750
+F 0 "#PWR05" H 5400 5500 50  0001 C CNN
+F 1 "GND" H 5400 5600 50  0000 C CNN
+F 2 "" H 5400 5750 50  0000 C CNN
+F 3 "" H 5400 5750 50  0000 C CNN
+	1    5400 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR06
+U 1 1 5AE8C2B3
+P 5000 5300
+F 0 "#PWR06" H 5000 5150 50  0001 C CNN
+F 1 "+5V" H 5000 5440 50  0000 C CNN
+F 2 "" H 5000 5300 50  0000 C CNN
+F 3 "" H 5000 5300 50  0000 C CNN
+	1    5000 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR07
+U 1 1 5AE8C2B9
+P 5800 5300
+F 0 "#PWR07" H 5800 5150 50  0001 C CNN
+F 1 "+3.3V" H 5800 5440 50  0000 C CNN
+F 2 "" H 5800 5300 50  0000 C CNN
+F 3 "" H 5800 5300 50  0000 C CNN
+	1    5800 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 5300 5100 5300
+Wire Wire Line
+	5700 5300 5800 5300
+$Comp
+L CP C?
+U 1 1 5AE8C2C1
+P 5050 5550
+F 0 "C?" H 5100 5650 50  0000 L CNN
+F 1 "10µF/16V" H 5100 5450 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:Tantalum_Case-A_EIA-3216-18_Reflow" H 5088 5400 50  0001 C CNN
+F 3 "" H 5050 5550 50  0000 C CNN
+	1    5050 5550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CP C?
+U 1 1 5AE8C2C8
+P 5750 5550
+F 0 "C?" H 5775 5650 50  0000 L CNN
+F 1 "10µF/16V" H 5775 5450 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:Tantalum_Case-A_EIA-3216-18_Reflow" H 5788 5400 50  0001 C CNN
+F 3 "" H 5750 5550 50  0000 C CNN
+	1    5750 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 5300
+Connection ~ 5750 5300
+Wire Wire Line
+	5050 5400 5050 5300
+Wire Wire Line
+	5050 5700 5750 5700
+Wire Wire Line
+	5400 5600 5400 5750
+Wire Wire Line
+	5750 5400 5750 5300
+Connection ~ 5400 5700
+$Comp
+L LM1117-3.3 U?
+U 1 1 5AE8C41C
+P 5400 5300
+F 0 "U?" H 5500 5050 50  0000 C CNN
+F 1 "LM1117-3.3" H 5400 5550 50  0000 C CNN
+F 2 "" H 5400 5300 50  0000 C CNN
+F 3 "" H 5400 5300 50  0000 C CNN
+	1    5400 5300
+	1    0    0    -1  
+$EndComp
+Text Notes 4750 6050 0    60   ~ 0
+Possible problems with tab pin, see usblink.
+$Sheet
+S 1400 3250 500  150 
+U 5AE8CA02
+F0 "WS2812B LEDs" 60
+F1 "beach-leds.sch" 60
+$EndSheet
+$EndSCHEMATC
