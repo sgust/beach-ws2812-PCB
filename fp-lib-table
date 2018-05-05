@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name beach-ws2812)(type KiCad)(uri "$(KIPRJMOD)/beach-ws2812.pretty")(options "")(descr ""))
+)
