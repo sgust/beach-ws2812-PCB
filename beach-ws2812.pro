@@ -1,4 +1,4 @@
-update=Tue 01 May 2018 05:27:44 PM CEST
+update=Sat 05 May 2018 03:49:01 PM CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,4 @@ LibName28=contrib
 LibName29=valves
 LibName30=stm32
 LibName31=ws2812
+LibName32=beach-ws2812
