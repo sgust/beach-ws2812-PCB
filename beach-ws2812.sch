@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -237,9 +237,9 @@ F 3 "" H 5400 5300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 1400 3250 500  150 
+S 7000 4950 500  150 
 U 5AE8CA02
-F0 "WS2812B LEDs" 60
+F0 "WS2812B LEDs 1-40" 60
 F1 "beach-leds.sch" 60
 $EndSheet
 Text GLabel 2550 700  0    60   Output ~ 0
@@ -685,4 +685,10 @@ F 3 "" H 4600 6300 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 Connection ~ 4450 6300
+$Sheet
+S 7000 5300 500  150 
+U 5AEEFC16
+F0 "WS2812B LEDs 41-80" 60
+F1 "beach-leds2.sch" 60
+$EndSheet
 $EndSCHEMATC
