@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -3110,5 +3110,8 @@ Wire Wire Line
 	11100 5200 11100 4450
 Wire Wire Line
 	2000 5600 2200 5600
-NoConn ~ 11100 5600
+Text GLabel 11100 5700 3    60   Output ~ 0
+LEDDATA5
+Wire Wire Line
+	11100 5700 11100 5600
 $EndSCHEMATC

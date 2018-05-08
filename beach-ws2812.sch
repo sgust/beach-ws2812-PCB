@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -237,7 +237,7 @@ F 3 "" H 5400 5300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 7000 4950 500  150 
+S 7000 4900 500  150 
 U 5AE8CA02
 F0 "WS2812B LEDs 1-40" 60
 F1 "beach-leds.sch" 60
@@ -686,21 +686,27 @@ F 3 "" H 4600 6300 50  0000 C CNN
 $EndComp
 Connection ~ 4450 6300
 $Sheet
-S 7000 5300 500  150 
+S 7000 5250 500  150 
 U 5AEEFC16
 F0 "WS2812B LEDs 41-80" 60
 F1 "beach-leds2.sch" 60
 $EndSheet
 $Sheet
-S 7000 5650 500  150 
+S 7000 5600 500  150 
 U 5AEF2C68
 F0 "ES2812B LEDs 81-120" 60
 F1 "beach-leds3.sch" 60
 $EndSheet
 $Sheet
-S 7000 6000 500  150 
+S 7000 5950 500  150 
 U 5AF0BA68
 F0 "ES2812B LEDs 121-160" 60
 F1 "beach-leds4.sch" 60
+$EndSheet
+$Sheet
+S 7000 6300 500  150 
+U 5AF20C97
+F0 "ES2812B LEDs 161-173" 60
+F1 "beach-leds5.sch" 60
 $EndSheet
 $EndSCHEMATC
