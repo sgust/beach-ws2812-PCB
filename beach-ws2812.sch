@@ -698,7 +698,7 @@ F0 "ES2812B LEDs 81-120" 60
 F1 "beach-leds3.sch" 60
 $EndSheet
 $Sheet
-S 7000 5950 500  150 
+S 7000 6000 500  150 
 U 5AF0BA68
 F0 "ES2812B LEDs 121-160" 60
 F1 "beach-leds4.sch" 60
